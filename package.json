@@ -1,0 +1,22 @@
+{
+  "name": "react-cookie-disclaimer",
+  "version": "0.0.1",
+  "description": "Cookie disclaimer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awibox/react-cookie-disclaimer.git"
+  },
+  "keywords": [
+    "cookie"
+  ],
+  "author": "awibox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awibox/react-cookie-disclaimer/issues"
+  },
+  "homepage": "https://github.com/awibox/react-cookie-disclaimer#readme"
+}
