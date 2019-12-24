@@ -2,7 +2,7 @@
   "name": "react-cookie-disclaimer",
   "version": "0.0.1",
   "description": "Cookie disclaimer",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack --mode production",
