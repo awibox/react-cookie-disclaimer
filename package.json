@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "NODE_ENV=production webpack --mode production",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,13 +22,11 @@
   },
   "homepage": "https://github.com/awibox/react-cookie-disclaimer#readme",
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^7",
-    "babel-plugin-add-module-exports": "^1.0.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^3.4.0",
     "prop-types": "^15.7.2",
     "webpack": "^4.41.4",
