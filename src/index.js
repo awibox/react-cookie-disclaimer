@@ -1,16 +1,3 @@
-import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
-// // Styles
-// import styles from './index.css';
+import { CookieDisclaimer } from "./components/CookieDisclaimer/CookieDisclaimer";
 
-class ReactCookieDisclaimer extends Component {
-  render() {
-    return(
-        <div>
-          Component
-        </div>
-    )
-  }
-}
-
-export default ReactCookieDisclaimer;
+export default CookieDisclaimer;
