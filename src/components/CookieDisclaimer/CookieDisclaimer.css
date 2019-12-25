@@ -5,3 +5,21 @@
     padding: 20px;
     background: #fff;
 }
+.cookie-disclaimer__close {
+    text-align: center;
+    line-height: 28px;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.cookie-disclaimer__close:after {
+    display: block;
+    font-size: 28px;
+    font-family: -webkit-pictograph;
+    content: '+';
+    font-weight: 100;
+}
