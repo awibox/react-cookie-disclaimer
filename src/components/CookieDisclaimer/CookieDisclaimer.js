@@ -15,7 +15,9 @@ export class CookieDisclaimer extends Component {
   }
 
   static propTypes = {
+    background: PropTypes.string,
     bottomPosition: PropTypes.bool,
+    color: PropTypes.string,
     title: PropTypes.string,
     text: PropTypes.string,
     maxAge: PropTypes.number,
@@ -24,7 +26,9 @@ export class CookieDisclaimer extends Component {
   };
 
   static defaultProps = {
+    background: '#fff',
     bottomPosition: false,
+    color: '#000',
     title: 'Cookie disclaimer',
     text: 'We use cookies to operate the website and platform, for analytical purposes, and for advertising/targeting purposes.',
     textForConsent: 'I agree',
@@ -52,6 +56,8 @@ export class CookieDisclaimer extends Component {
     const positionObj = this.props.bottomPosition ? {bottom: 0} : {top: 0};
     const style = {
       visibility: closeDisclaimer ? 'hidden' : 'visible',
+      backgroundColor: this.props.background,
+      color: this.props.color,
       ...positionObj
     };
 

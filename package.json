@@ -1,6 +1,6 @@
 {
   "name": "react-cookie-disclaimer",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Cookie disclaimer",
   "main": "./dist/index.js",
   "scripts": {
