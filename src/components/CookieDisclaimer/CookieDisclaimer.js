@@ -9,35 +9,56 @@ export class CookieDisclaimer extends Component {
     super(props);
     this.state = {
       close: false,
+      hasStorage: LocalStorage.get('react-cookie-disclaimer')
     };
     this.closeDisclaimer = this.closeDisclaimer.bind(this);
   }
 
   static propTypes = {
+    bottomPosition: PropTypes.bool,
+    title: PropTypes.string,
     text: PropTypes.string,
     maxAge: PropTypes.number,
+    textForConsent: PropTypes.string,
+    textForSkip: PropTypes.string
   };
 
   static defaultProps = {
+    bottomPosition: false,
+    title: 'Cookie disclaimer',
     text: 'We use cookies to operate the website and platform, for analytical purposes, and for advertising/targeting purposes.',
-    maxAge: 3600
+    textForConsent: 'I agree',
+    textForSkip: 'Skip'
   };
 
   closeDisclaimer(){
     this.setState({close: true});
-    Cookie.set('react-cookie-disclaimer', true, {'max-age': this.props.maxAge})
+    LocalStorage.set('react-cookie-disclaimer', true);
+    if(!this.props.bottomPosition) {
+      document.body.style.marginTop = 0;
+    }
+  }
+  componentDidMount() {
+    if(!this.state.hasStorage && !this.props.bottomPosition) {
+      const disclaimer = document.getElementById('cookie-disclaimer').offsetHeight;
+      document.body.style.marginTop = disclaimer + 'px';
+    }
   }
   render() {
-    const hasCookie = Cookie.get('react-cookie-disclaimer');
-    const hasStorage = LocalStorage.get('react-cookie-disclaimer');
-    if(hasCookie || hasStorage) {
+    if(this.state.hasStorage) {
       return null;
     }
     const closeDisclaimer = this.state.close;
+    const positionObj = this.props.bottomPosition ? {bottom: 0} : {top: 0};
+    const style = {
+      visibility: closeDisclaimer ? 'hidden' : 'visible',
+      ...positionObj
+    };
+
     return(
-        <div className='cookie-disclaimer' style={closeDisclaimer ? {visibility: 'hidden'} : {}}>
+        <div className='cookie-disclaimer' id='cookie-disclaimer' style={style}>
           <div className='cookie-disclaimer__close' onClick={this.closeDisclaimer} />
-          {this.props.text}
+          <div className='cookie-disclaimer__text'>{this.props.text}</div>
         </div>
     );
   }
