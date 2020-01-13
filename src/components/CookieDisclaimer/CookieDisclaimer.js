@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { LocalStorage, Cookie } from 'combo-storage';
+import { LocalStorage } from 'combo-storage';
 // Styles
 import './CookieDisclaimer.css';
 
@@ -18,21 +18,17 @@ export class CookieDisclaimer extends Component {
     background: PropTypes.string,
     bottomPosition: PropTypes.bool,
     color: PropTypes.string,
-    title: PropTypes.string,
     text: PropTypes.string,
-    maxAge: PropTypes.number,
-    textForConsent: PropTypes.string,
-    textForSkip: PropTypes.string
   };
 
   static defaultProps = {
     background: '#fff',
     bottomPosition: false,
     color: '#000',
-    title: 'Cookie disclaimer',
-    text: 'We use cookies to operate the website and platform, for analytical purposes, and for advertising/targeting purposes.',
-    textForConsent: 'I agree',
-    textForSkip: 'Skip'
+    cookiePolicyLink: '',
+    cookiePolicyName: 'Cookie Policy',
+    cookiePolicyText: 'Please read our',
+    text: 'This website uses cookies to improve service, for analytical and advertising purposes.',
   };
 
   closeDisclaimer(){
@@ -52,20 +48,35 @@ export class CookieDisclaimer extends Component {
     if(this.state.hasStorage) {
       return null;
     }
+    const {
+      background,
+      bottomPosition,
+      color,
+      cookiePolicyLink,
+      cookiePolicyText,
+      cookiePolicyName,
+      text
+    } = this.props;
     const closeDisclaimer = this.state.close;
-    const positionObj = this.props.bottomPosition ? {bottom: 0} : {top: 0};
+    const positionObj = bottomPosition ? {bottom: 0} : {top: 0};
     const style = {
       visibility: closeDisclaimer ? 'hidden' : 'visible',
-      backgroundColor: this.props.background,
-      color: this.props.color,
+      backgroundColor: background,
+      color: color,
       ...positionObj
     };
 
     return(
-        <div className='cookie-disclaimer' id='cookie-disclaimer' style={style}>
-          <div className='cookie-disclaimer__close' onClick={this.closeDisclaimer} />
-          <div className='cookie-disclaimer__text'>{this.props.text}</div>
+      <div className='cookie-disclaimer' id='cookie-disclaimer' style={style}>
+        <div className='cookie-disclaimer__close' onClick={this.closeDisclaimer} />
+        <div className='cookie-disclaimer__text'>
+          {text}
+          <span style={{display: cookiePolicyLink ? 'inline' : 'none'}}>
+            {` ${cookiePolicyText} `}
+            <a href={cookiePolicyLink} style={{color: color}}>{cookiePolicyName}</a>
+          </span>
         </div>
+      </div>
     );
   }
 }
