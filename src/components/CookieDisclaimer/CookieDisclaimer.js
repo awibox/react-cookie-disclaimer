@@ -27,7 +27,7 @@ export class CookieDisclaimer extends Component {
     color: '#000',
     cookiePolicyLink: '',
     cookiePolicyName: 'Cookie Policy',
-    cookiePolicyText: 'Please read our',
+    cookiePolicyText: 'By continuing to use the service, you agree to our use of cookies as described in the',
     text: 'This website uses cookies to improve service, for analytical and advertising purposes.',
   };
 
