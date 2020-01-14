@@ -1,3 +1,3 @@
-import { CookieDisclaimer } from "./components/CookieDisclaimer/CookieDisclaimer";
+import CookieDisclaimer from './components/CookieDisclaimer/CookieDisclaimer';
 
 export default CookieDisclaimer;
