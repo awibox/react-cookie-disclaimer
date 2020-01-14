@@ -30,35 +30,35 @@ Then use the component in your application. For example:
 
 <a name="settings"></a>
 ## The settings of the component
-#### background
+### background
 Sets the color for the background in any format that supports css.
 ```typescript jsx
 <CookieDisclaimer background='#0079c1' />
 ```
 Default value: ``` #fff ```
 
-#### bottomPosition
+### bottomPosition
 By default, the notification is displayed at the top of the page and the value of this parameter is ```false```. 
 If set to ```true```, the notification will be displayed at the bottom.
 ```typescript jsx
 <CookieDisclaimer bottomPosition={true} />
 ```
 
-#### color
+### color
 Sets the color of the text and the cross to close.
 ```typescript jsx
 <CookieDisclaimer bottomPosition='#fff' />
 ```
 Default value: ``` #000 ```
 
-#### cookiePolicyName
+### cookiePolicyName
 Sets the name for the cookie policy link
 ```typescript jsx
 <CookieDisclaimer cookiePolicyName='our Cookie Policy' />
 ```
 Default value: ``` Cookie Policy ```
 
-#### cookiePolicyText
+### cookiePolicyText
 Sets the text before the cookie policy link. 
 It is recommended to set value because default text may change in future versions.
 ```typescript jsx
@@ -66,14 +66,14 @@ It is recommended to set value because default text may change in future version
 ```
 Default value: ``` By continuing to use the service, you agree to our use of cookies as described in the ```
 
-#### cookiePolicyLink
+### cookiePolicyLink
 Link to your cookie policy. 
 If the link value is not set, the link with the name (cookiePolicyName) and the text before the link (cookiePolicyText) will not be displayed.
 ```typescript jsx
 <CookieDisclaimer cookiePolicyLink='/cookie-policy' />
 ```
 
-#### text
+### text
 This is the main text that will be displayed in the notification. It is recommended to set value because default text may change in future versions.
 ```typescript jsx
 <CookieDisclaimer text='This website uses cookies to improve service.' />
