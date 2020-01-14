@@ -5,6 +5,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "lint": "eslint --report-unused-disable-directives src",
+    "fix": "eslint --fix --report-unused-disable-directives src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,19 +27,24 @@
   "homepage": "https://github.com/awibox/react-cookie-disclaimer#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^7",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^3.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-react": "^7.17.0",
     "mini-css-extract-plugin": "^0.9.0",
-    "prop-types": "^15.7.2",
     "style-loader": "^1.1.1",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "combo-storage": "^1.1.2",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0"
   }
 }
