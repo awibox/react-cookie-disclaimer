@@ -76,9 +76,9 @@ class CookieDisclaimer extends Component {
         <div className='cookie-disclaimer__close' onClick={this.closeDisclaimer} />
         <div className='cookie-disclaimer__text'>
           {text}
-          <span style={{ display: cookiePolicyLink ? 'inline' : 'none' }}>
+          <span className='cookie-disclaimer__cookie-policy' style={{ display: cookiePolicyLink ? 'inline' : 'none' }}>
             {` ${cookiePolicyText} `}
-            <a href={cookiePolicyLink} style={{ color }}>{cookiePolicyName}</a>
+            <a className='cookie-disclaimer__cookie-policy-link' href={cookiePolicyLink} style={{ color }}>{cookiePolicyName}</a>
           </span>
         </div>
       </div>

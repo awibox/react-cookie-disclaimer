@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CookieDisclaimer should render correctly 1`] = `
+<div
+  className="cookie-disclaimer"
+  id="cookie-disclaimer"
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "color": "#000",
+      "top": 0,
+      "visibility": "visible",
+    }
+  }
+>
+  <div
+    className="cookie-disclaimer__close"
+    onClick={[Function]}
+  />
+  <div
+    className="cookie-disclaimer__text"
+  >
+    This website uses cookies to improve service, for analytical and advertising purposes.
+    <span
+      className="cookie-disclaimer__cookie-policy"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+       By continuing to use the service, you agree to our use of cookies as described in the 
+      <a
+        className="cookie-disclaimer__cookie-policy-link"
+        href=""
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        Cookie Policy
+      </a>
+    </span>
+  </div>
+</div>
+`;
