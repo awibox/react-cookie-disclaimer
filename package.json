@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "lint": "eslint --report-unused-disable-directives src",
     "fix": "eslint --fix --report-unused-disable-directives src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,17 +26,24 @@
   },
   "homepage": "https://github.com/awibox/react-cookie-disclaimer#readme",
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^7",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^3.4.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-react": "^7.17.0",
+    "jest": "^24.9.0",
+    "jest-css-modules-transform": "^3.1.0",
+    "jest-enzyme": "^7.1.2",
     "mini-css-extract-plugin": "^0.9.0",
     "style-loader": "^1.1.1",
     "webpack": "^4.41.4",
@@ -45,6 +52,26 @@
   "dependencies": {
     "combo-storage": "^1.1.2",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/node_modules/jest-enzyme/lib/index.js",
+      "<rootDir>/jest-setup-tests.js"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
+    }
   }
 }
