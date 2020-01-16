@@ -14,7 +14,8 @@ Enzyme.configure({ adapter: new Adapter() });
 global.React = React;
 global.shallow = shallow;
 global.localStorage = {
-    getItem: () => false
+    getItem: () => false,
+    setItem: () => true,
 };
 global.document = {
     getElementById: () => 0,
