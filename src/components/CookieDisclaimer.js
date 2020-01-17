@@ -110,7 +110,7 @@ class CookieDisclaimer extends Component {
     return (
       <div id='cookie-disclaimer' style={styleForCookieDisclaimer}>
         <div id='cookie-disclaimer-close' onClick={this.closeDisclaimer} style={styleForCloseButton}>+</div>
-        {children ? children : <div id='cookie-disclaimer-text'>
+        {children || <div id='cookie-disclaimer-text'>
           {text}
           <span id='cookie-policy' style={{ display: cookiePolicyLink ? 'inline' : 'none' }}>
             {` ${cookiePolicyText} `}
