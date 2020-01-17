@@ -1,5 +1,21 @@
 ![react-cookie-disclaimer](https://repository-images.githubusercontent.com/229484861/fbde4700-36cf-11ea-88fe-db2690c68f8e)
 
+<p align="center">
+    <a href="https://www.npmjs.com/package/react-cookie-disclaimer">
+        <img src="https://img.shields.io/npm/v/react-cookie-disclaimer" alt="npm version">
+    </a>
+    <a href="https://travis-ci.org/awibox/react-cookie-disclaimer">
+        <img src='https://travis-ci.org/awibox/react-cookie-disclaimer.svg?branch=master' alt='Build' />
+    </a>    
+    <a href='https://coveralls.io/github/awibox/react-cookie-disclaimer?branch=develop'>
+        <img src='https://coveralls.io/repos/github/awibox/react-cookie-disclaimer/badge.svg?branch=develop' alt='Coverage Status' />
+    </a>
+    <a href="https://www.npmjs.com/package/react-cookie-disclaimer">
+        <img src="https://img.shields.io/npm/dm/react-cookie-disclaimer" alt="Downloads">
+    </a>
+    <img src="https://img.shields.io/npm/l/react-cookie-disclaimer" alt="license">
+</p>
+
 ## Table of contents
 * [Installation](#installation)
 * [Getting started](#gettingstarted)
