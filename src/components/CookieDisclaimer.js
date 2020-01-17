@@ -30,6 +30,7 @@ class CookieDisclaimer extends Component {
   static propTypes = {
     background: PropTypes.string,
     bottomPosition: PropTypes.bool,
+    children: PropTypes.any,
     color: PropTypes.string,
     cookiePolicyLink: PropTypes.string,
     cookiePolicyName: PropTypes.string,
@@ -75,6 +76,7 @@ class CookieDisclaimer extends Component {
     const {
       background,
       bottomPosition,
+      children,
       color,
       cookiePolicyLink,
       cookiePolicyText,
@@ -108,13 +110,14 @@ class CookieDisclaimer extends Component {
     return (
       <div id='cookie-disclaimer' style={styleForCookieDisclaimer}>
         <div id='cookie-disclaimer-close' onClick={this.closeDisclaimer} style={styleForCloseButton}>+</div>
-        <div id='cookie-disclaimer-text'>
+        {children ? children : <div id='cookie-disclaimer-text'>
           {text}
           <span id='cookie-policy' style={{ display: cookiePolicyLink ? 'inline' : 'none' }}>
             {` ${cookiePolicyText} `}
             <a id='cookie-policy-link' href={cookiePolicyLink} style={{ color }}>{cookiePolicyName}</a>
           </span>
         </div>
+        }
       </div>
     );
   }
