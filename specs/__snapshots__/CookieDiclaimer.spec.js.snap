@@ -2,27 +2,50 @@
 
 exports[`CookieDisclaimer should render correctly 1`] = `
 <div
-  className="cookie-disclaimer"
   id="cookie-disclaimer"
   style={
     Object {
       "backgroundColor": "#fff",
+      "boxShadow": "0 0 3px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.24)",
       "color": "#000",
+      "left": 0,
+      "padding": "20px",
+      "paddingRight": "48px",
+      "position": "fixed",
+      "right": 0,
       "top": 0,
       "visibility": "visible",
     }
   }
 >
   <div
-    className="cookie-disclaimer__close"
+    id="cookie-disclaimer-close"
     onClick={[Function]}
-  />
+    style={
+      Object {
+        "cursor": "pointer",
+        "fontFamily": "-webkit-pictograph",
+        "fontSize": "28px",
+        "height": "28px",
+        "lineHeight": "28px",
+        "marginTop": "-14px",
+        "position": "absolute",
+        "right": "10px",
+        "textAlign": "center",
+        "top": "50%",
+        "transform": "rotate(45deg)",
+        "width": "28px",
+      }
+    }
+  >
+    +
+  </div>
   <div
-    className="cookie-disclaimer__text"
+    id="cookie-disclaimer-text"
   >
     This website uses cookies to improve service, for analytical and advertising purposes.
     <span
-      className="cookie-disclaimer__cookie-policy"
+      id="cookie-policy"
       style={
         Object {
           "display": "none",
@@ -31,8 +54,8 @@ exports[`CookieDisclaimer should render correctly 1`] = `
     >
        By continuing to use the service, you agree to our use of cookies as described in the 
       <a
-        className="cookie-disclaimer__cookie-policy-link"
         href=""
+        id="cookie-policy-link"
         style={
           Object {
             "color": "#000",
