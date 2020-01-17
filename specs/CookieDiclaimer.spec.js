@@ -34,11 +34,11 @@ describe('CookieDisclaimer', () => {
     const component = shallow(<CookieDisclaimer />);
     expect(component.find('.cookie-disclaimer').get(0).props.style.top).toEqual(0);
   });
-  it('should do not have cookie policy link', () => {
+  it('should hide cookie policy link', () => {
     const component = shallow(<CookieDisclaimer />);
     expect(component.find('.cookie-disclaimer__cookie-policy').get(0).props.style.display).toEqual('none');
   });
-  it('should have cookie policy link', () => {
+  it('should display cookie policy link', () => {
     const component = shallow(<CookieDisclaimer cookiePolicyLink={testCookiePolicyLink} />);
     expect(component.find('.cookie-disclaimer__cookie-policy').get(0).props.style.display).toEqual('inline');
   });
@@ -63,7 +63,7 @@ describe('CookieDisclaimer', () => {
     const component = shallow(<CookieDisclaimer text={testText} />);
     expect(component.find('.cookie-disclaimer__text').get(0).props.children[0]).toEqual(testText);
   });
-  it('should have close notification', () => {
+  it('should close notification', () => {
     const component = shallow(<CookieDisclaimer />);
     component.find('.cookie-disclaimer__close').simulate('click');
     expect(component.find('.cookie-disclaimer').get(0).props.style.visibility).toEqual('hidden');
