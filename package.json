@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "lint": "eslint --report-unused-disable-directives src",
     "fix": "eslint --fix --report-unused-disable-directives src",
-    "test": "jest --coverage --no-cache",
+    "test": "jest",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
@@ -36,7 +36,6 @@
     "babel-loader": "^7",
     "babel-preset-stage-2": "^6.24.1",
     "coveralls": "^3.0.9",
-    "css-loader": "^3.4.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.3",
@@ -47,8 +46,6 @@
     "jest": "^24.9.0",
     "jest-css-modules-transform": "^3.1.0",
     "jest-enzyme": "^7.1.2",
-    "mini-css-extract-plugin": "^0.9.0",
-    "style-loader": "^1.1.1",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   },
