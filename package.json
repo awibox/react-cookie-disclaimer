@@ -7,7 +7,8 @@
     "build": "webpack --mode production",
     "lint": "eslint --report-unused-disable-directives src",
     "fix": "eslint --fix --report-unused-disable-directives src",
-    "test": "jest"
+    "test": "jest --coverage --no-cache",
+    "coveralls": "coveralls"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^7",
     "babel-preset-stage-2": "^6.24.1",
+    "coveralls": "^3.0.9",
     "css-loader": "^3.4.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
