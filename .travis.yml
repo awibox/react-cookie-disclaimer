@@ -1,6 +1,12 @@
 language: node_js
 node_js:
   - 13.2.0
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules
 install:
   - npm install
 script:
