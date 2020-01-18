@@ -13,5 +13,4 @@ script:
   - yarn lint
   - yarn build
 after_script:
-  - yarn test
   - yarn coveralls
