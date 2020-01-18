@@ -8,9 +8,9 @@ cache:
   directories:
     - node_modules
 install:
-  - yarn install
+  - npm install
 script:
-  - yarn lint
-  - yarn build
+  - npm run lint
+  - npm run build
 after_script:
-  - yarn coveralls
+  - npm run coveralls
