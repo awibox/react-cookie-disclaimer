@@ -6,7 +6,7 @@
     </a>
     <a href="https://travis-ci.org/awibox/react-cookie-disclaimer">
         <img src='https://travis-ci.org/awibox/react-cookie-disclaimer.svg?branch=master' alt='Build' />
-    </a>    
+    </a>
     <a href='https://coveralls.io/github/awibox/react-cookie-disclaimer?branch=master'>
         <img src='https://coveralls.io/repos/github/awibox/react-cookie-disclaimer/badge.svg?branch=master' alt='Coverage Status' />
     </a>
@@ -46,79 +46,18 @@ Then use the component in your application. For example:
 
 <a name="settings"></a>
 ## The settings of the component
-### background (string)
-Sets the color for the background in any format that supports css.
-```typescript jsx
-<CookieDisclaimer background='#0079c1' />
-```
-Default value: ``` #fff ```
-
-### bottomPosition (boolean)
-By default, the notification is displayed at the top of the page and the value of this parameter is ```false```. 
-If set to ```true```, the notification will be displayed at the bottom.
-```typescript jsx
-<CookieDisclaimer bottomPosition={true} />
-```
-Default value: ``` false ```
-
-### color (string)
-Sets the color of the text and the cross to close.
-```typescript jsx
-<CookieDisclaimer bottomPosition='#fff' />
-```
-Default value: ``` #000 ```
-
-### cookiePolicyName (string)
-Sets the name for the cookie policy link
-```typescript jsx
-<CookieDisclaimer cookiePolicyName='our Cookie Policy' />
-```
-Default value: ``` Cookie Policy ```
-
-### cookiePolicyText (string)
-Sets the text before the cookie policy link. 
-It is recommended to set value because default text may change in future versions.
-```typescript jsx
-<CookieDisclaimer cookiePolicyText='Please read' />
-```
-Default value: ``` By continuing to use the service, you agree to our use of cookies as described in the ```
-
-### cookiePolicyLink (string)
-Link to your cookie policy. 
-If the link value is not set, the link with the name (cookiePolicyName) and the text before the link (cookiePolicyText) will not be displayed.
-```typescript jsx
-<CookieDisclaimer cookiePolicyLink='/cookie-policy' />
-```
-
-### text (string)
-This is the main text that will be displayed in the notification. It is recommended to set value because default text may change in future versions.
-```typescript jsx
-<CookieDisclaimer text='This website uses cookies to improve service.' />
-```
-Default value: ``` This website uses cookies to improve service, for analytical and advertising purposes. ```
-
-### closeIconSize (number)
-Sets the size of the icon to close the notification
-```typescript jsx
-<CookieDisclaimer closeIconSize={20} />
-```
-Default value: ``` 28 ```
-
-### closeIconPositionTop (boolean)
-By default the icon for closing is displayed in the middle relative to the height of the notification and the value of this parameter is ```false```. 
-If set to ```true```, the closing icon will be displayed on the top.
-```typescript jsx
-<CookieDisclaimer closeIconPositionTop={true} />
-```
-Default value: ``` false ```
-
-### padding (number)
-Sets padding for cookie notification
-```typescript jsx
-<CookieDisclaimer padding={15} />
-```
-Default value: ``` 20 ```
-
+|Parameter|Type|Description|Default|
+|--------------------|--------|-----------|-------|
+|background|string|Sets the color for the background in any format that supports css|``` #fff ```|
+|bottomPosition|boolean|By default, the notification is displayed at the top of the page and the value of this parameter is ```false```. If set to ```true```, the notification will be displayed at the bottom|``` false ```|
+|color|string|Sets the color of the text and the cross to close|``` #000 ```|
+|cookiePolicyName|string|Sets the name for the cookie policy link|``` Cookie Policy ```|
+|cookiePolicyText|string|Sets the text before the cookie policy link. It is recommended to set value because default text may change in future versions|``` By continuing to use the service, you agree to our use of cookies as described in the ```|
+|cookiePolicyLink|string|Link to your cookie policy. If the link value is not set, the link with the name (cookiePolicyName) and the text before the link (cookiePolicyText) will not be displayed|-|
+|text|string|This is the main text that will be displayed in the notification. It is recommended to set value because default text may change in future versions|``` This website uses cookies to improve service, for analytical and advertising purposes. ```|
+|closeIconSize|number|Sets the size of the icon to close the notification|``` 28 ```|
+|closeIconPositionTop|boolean|By default the icon for closing is displayed in the middle relative to the height of the notification and the value of this parameter is ```false```. If set to ```true```, the closing icon will be displayed on the top|``` false ```|
+|padding|number|Sets padding for cookie notification|``` 20 ```|
 
 <a name="custom"></a>
 ## Custom content
