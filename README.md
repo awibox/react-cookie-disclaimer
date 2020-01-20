@@ -69,7 +69,6 @@ You can place your own content in the notification. You should call the componen
 ## Example
 ```typescript jsx
 import CookieDisclaimer from 'react-cookie-disclaimer';
-import 'react-cookie-disclaimer/dist/css/main.css';
 
 const App = () => (
   <div className="app">
