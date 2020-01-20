@@ -1,6 +1,6 @@
 {
   "name": "react-cookie-disclaimer",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The package will help you to display a notification about the use of cookies on the site",
   "main": "./dist/index.js",
   "scripts": {
@@ -34,7 +34,6 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^7",
-    "babel-preset-stage-2": "^6.24.1",
     "coveralls": "^3.0.9",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
