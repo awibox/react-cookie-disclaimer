@@ -1,6 +1,6 @@
 {
   "name": "react-cookie-disclaimer",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "The package will help you to display a notification about the use of cookies on the site",
   "main": "./dist/index.js",
   "scripts": {
@@ -55,6 +55,7 @@
     "react-dom": "^16.12.0"
   },
   "jest": {
+    "collectCoverageFrom": ["src/**/*.{js,jsx,mjs}", "!src/index.js"],
     "testEnvironment": "node",
     "moduleFileExtensions": [
       "js",
