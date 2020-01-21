@@ -25,17 +25,17 @@
 
 <a name="installation"></a>
 ## Installation
-You need to install package.
+You need to install package:
 ```bash
 npm install react-cookie-disclaimer
 ```
-You can use yarn.
+You can use yarn:
 ```bash
 yarn add react-cookie-disclaimer
 ```
 <a name="gettingstarted"></a>
 ## Getting started
-You should import the component and css file
+You should import the component:
 ```js
 import CookieDisclaimer from 'react-cookie-disclaimer';
 ```
