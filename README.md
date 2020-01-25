@@ -88,3 +88,7 @@ const App = () => (
 );
 export default App;
 ```
+
+<a name="contributing"></a>
+## Contributing
+Please read through our [CONTRIBUTING.md](/.github/CONTRIBUTING.md).
