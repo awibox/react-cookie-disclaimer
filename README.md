@@ -21,7 +21,9 @@
 * [Getting started](#gettingstarted)
 * [The settings of the component](#settings)
 * [Custom content](#custom)
+* [Custom styles](#styles)
 * [Example](#example)
+* [Contributing](#contributing)
 
 <a name="installation"></a>
 ## Installation
@@ -65,6 +67,14 @@ You can place your own content in the notification. You should call the componen
 ```typescript jsx
 <CookieDisclaimer background='#000' color='#fff'>JSX custom content</CookieDisclaimer>
 ```
+
+<a name="styles"></a>
+## Custom styles
+You can also add custom styles by passing the className parameter:
+```typescript jsx
+<CookieDisclaimer className={styles.cookieDisclaimer}>JSX custom content</CookieDisclaimer>
+```
+
 <a name="example"></a>
 ## Example
 ```typescript jsx
