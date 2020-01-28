@@ -70,7 +70,7 @@ You can place your own content in the notification. You should call the componen
 
 <a name="styles"></a>
 ## Custom styles
-You can also add custom styles by passing the className parameter:
+You can also add custom styles by passing the ```className``` parameter:
 ```typescript jsx
 <CookieDisclaimer className={styles.cookieDisclaimer}>JSX custom content</CookieDisclaimer>
 ```
