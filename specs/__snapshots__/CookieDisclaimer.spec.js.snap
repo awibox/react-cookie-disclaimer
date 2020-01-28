@@ -15,6 +15,7 @@ exports[`CookieDisclaimer should render correctly 1`] = `
       "right": 0,
       "top": 0,
       "visibility": "visible",
+      "zIndex": 900,
     }
   }
 >
