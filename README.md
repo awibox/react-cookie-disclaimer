@@ -50,14 +50,14 @@ Then use the component in your application. For example:
 ## The settings of the component
 |Parameter|Type|Description|Default|
 |--------------------|--------|-----------|-------|
-|**background**|string|Sets the color for the background in any format that supports css|``` #fff ```|
-|**bottomPosition**|boolean|By default, the notification is displayed at the top of the page and the value of this parameter is ```false```. If set to ```true```, the notification will be displayed at the bottom|``` false ```|
-|**color**|string|Sets the color of the text and the cross to close|``` #000 ```|
-|**cookiePolicyName**|string|Sets the name for the cookie policy link|``` Cookie Policy ```|
+|**background**|string|Sets the notification background color in any format that supports css|``` #fff ```|
+|**bottomPosition**|boolean|By default notification is displayed at the top of the page. If set to ```true```, the notification will be displayed at the bottom|``` false ```|
+|**color**|string|Sets the text color|``` #000 ```|
+|**cookiePolicyName**|string|Sets the name of cookie policy link|``` Cookie Policy ```|
 |**cookiePolicyText**|string|Sets the text before the cookie policy link. It is recommended to set value because default text may change in future versions|``` By continuing to use the service, you agree to our use of cookies as described in the ```|
 |**cookiePolicyLink**|string|Link to your cookie policy. If the link value is not set, the link with the name (cookiePolicyName) and the text before the link (cookiePolicyText) will not be displayed|-|
 |**text**|string|This is the main text that will be displayed in the notification. It is recommended to set value because default text may change in future versions|``` This website uses cookies to improve service, for analytical and advertising purposes. ```|
-|**closeIconSize**|number|Sets the size of the icon to close the notification|``` 28 ```|
+|**closeIconSize**|number|Sets the icon size to close the notification|``` 28 ```|
 |**closeIconPositionTop**|boolean|By default the icon for closing is displayed in the middle relative to the height of the notification and the value of this parameter is ```false```. If set to ```true```, the closing icon will be displayed on the top|``` false ```|
 |**padding**|number|Sets padding for cookie notification|``` 20 ```|
 
