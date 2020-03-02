@@ -1,13 +1,13 @@
 {
   "name": "react-cookie-disclaimer",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "The package will help you to display a notification about the use of cookies on the site",
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
     "lint": "eslint --report-unused-disable-directives src",
     "fix": "eslint --fix --report-unused-disable-directives src",
-    "test": "jest",
+    "test": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "setup": "cp ./.github/hooks/pre-commit ./.git/hooks/pre-commit && chmod +x ./.git/hooks/pre-commit"
   },
@@ -45,12 +45,16 @@
     "eslint-plugin-react": "^7.17.0",
     "jest": "^24.9.0",
     "jest-enzyme": "^7.1.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "combo-storage": "^2.0.1",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
