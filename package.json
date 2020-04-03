@@ -1,6 +1,6 @@
 {
   "name": "react-cookie-disclaimer",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "The package will help you to display a notification about the use of cookies on the site",
   "main": "./dist/index.js",
   "scripts": {
@@ -51,7 +51,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "combo-storage": "^2.0.1",
+    "combo-storage": "^2.0.3",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
