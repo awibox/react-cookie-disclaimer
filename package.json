@@ -51,7 +51,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "combo-storage": "^2.0.1",
+    "combo-storage": "^2.0.3",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
