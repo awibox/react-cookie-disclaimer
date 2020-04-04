@@ -1,6 +1,6 @@
 {
   "name": "react-cookie-disclaimer",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "The package will help you to display a notification about the use of cookies on the site",
   "main": "./dist/index.js",
   "scripts": {
