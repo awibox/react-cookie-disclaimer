@@ -1,20 +1,17 @@
+<div align="center">
+
 ![react-cookie-disclaimer](https://repository-images.githubusercontent.com/229484861/fbde4700-36cf-11ea-88fe-db2690c68f8e)
 
-<p align="center">
-    <a href="https://www.npmjs.com/package/react-cookie-disclaimer">
-        <img src="https://img.shields.io/npm/v/react-cookie-disclaimer" alt="npm version">
-    </a>
-    <a href="https://travis-ci.org/awibox/react-cookie-disclaimer">
-        <img src='https://travis-ci.org/awibox/react-cookie-disclaimer.svg?branch=master' alt='Build' />
-    </a>
-    <a href='https://coveralls.io/github/awibox/react-cookie-disclaimer?branch=master'>
-        <img src='https://coveralls.io/repos/github/awibox/react-cookie-disclaimer/badge.svg?branch=master' alt='Coverage Status' />
-    </a>
-    <a href="https://www.npmjs.com/package/react-cookie-disclaimer">
-        <img src="https://img.shields.io/npm/dm/react-cookie-disclaimer" alt="Downloads">
-    </a>
-    <img src="https://img.shields.io/npm/l/react-cookie-disclaimer" alt="license">
-</p>
+[![Version](https://img.shields.io/npm/v/react-cookie-disclaimer)](https://www.npmjs.com/package/react-cookie-disclaimer)
+[![Build](https://travis-ci.org/awibox/react-cookie-disclaimer.svg?branch=master)](https://travis-ci.org/awibox/react-cookie-disclaimer)
+[![Coverage](https://coveralls.io/repos/github/awibox/react-cookie-disclaimer/badge.svg?branch=master)](https://coveralls.io/github/awibox/react-cookie-disclaimer?branch=master)
+[![Minified size](https://img.shields.io/bundlephobia/min/react-cookie-disclaimer)](https://github.com/awibox/react-cookie-disclaimer/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/npm/dm/react-cookie-disclaimer)](https://www.npmjs.com/package/react-cookie-disclaimer)
+[![Dependabot](https://api.dependabot.com/badges/status?host=github&repo=awibox/react-cookie-disclaimer)](https://dependabot.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/awibox/react-cookie-disclaimer/pulls)
+[![Tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+
+</div>
 
 ## Table of contents
 * [Installation](#installation)
