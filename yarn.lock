@@ -2203,9 +2203,9 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
     delayed-stream "~1.0.0"
 
 combo-storage@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/combo-storage/-/combo-storage-2.0.3.tgz#327ef47eed8c69f88a672f13638d97f588fcc1ca"
-  integrity sha512-TG/SQ0kjK0EQt/s6tV93LCeDNScfaRHWXTiTsoQw1xTA6kTQD30iSGwjxohpcxTRUbTnmp2pKYqotOB54KbOVw==
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/combo-storage/-/combo-storage-2.0.4.tgz#05ff22127a6f34eed512c3c67e0bc01aa59df5e7"
+  integrity sha512-pyk7ypRAC7TW/oLp0lXwdQ9E9iWTvpVegZgh/2OQ1UsQJzM9fwxct+RSUT6Ekr83fC5Zp90+XcOKbMuH+CYckw==
 
 commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
